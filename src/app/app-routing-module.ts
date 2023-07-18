@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router"; 
 import { RegisteruserComponent } from "./components/users/registeruser/registeruser.component";
 import { AccessrestrictedComponent } from "./_shared/accessrestricted/accessrestricted.component";
+import { PopupComponent } from "./components/popup/popup.component";
 
 const routes: Routes = [
     {
@@ -14,6 +15,10 @@ const routes: Routes = [
         component: RegisteruserComponent
 
     }, 
+    {
+        path:'popup2',
+        component: PopupComponent
+    },
     {
         path: '403',
         component: AccessrestrictedComponent

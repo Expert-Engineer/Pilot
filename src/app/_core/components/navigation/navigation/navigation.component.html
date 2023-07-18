@@ -25,11 +25,28 @@
               [routerLinkActive]="['link-active']"
               [routerLinkActiveOptions]="{ exact: true }"
             >
+              <a class="nav-link text-dark" type="button" (click)="modalComponent.openModal('My Modal')">Popup 1</a>
+            </li>
+            <li
+              class="nav-item"
+              [routerLinkActive]="['link-active']"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
+              <a class="nav-link text-dark" [routerLink]="['/popup2']">Popup 2</a>
+            </li>
+            <li
+              class="nav-item"
+              [routerLinkActive]="['link-active']"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
               <a class="nav-link text-dark" [routerLink]="['/']">User</a>
-            </li>  
+            </li> 
           </ul>
         </div>
       </div>
     </nav>
   </header>
   
+  <app-modal #modalComponent>
+    <p>hello world</p>
+</app-modal>

@@ -18,7 +18,9 @@ import { ApiKeyInterceptorService } from './_interceptors/apikey-interceptor.ser
 import { RegisteruserComponent } from './components/users/registeruser/registeruser.component';
 import { AccessrestrictedComponent } from './_shared/accessrestricted/accessrestricted.component';
 import { LoaderComponent } from './_shared/loader/loader.component';
-import { NavigationComponent } from './_core/components/navigation/navigation/navigation.component'; 
+import { NavigationComponent } from './_core/components/navigation/navigation/navigation.component';
+import { ModalComponent } from './_core/components/modal/modal.component';
+import { PopupComponent } from './components/popup/popup.component'; 
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { NavigationComponent } from './_core/components/navigation/navigation/na
     RegisteruserComponent,
     AccessrestrictedComponent,
     LoaderComponent,
-    NavigationComponent
+    NavigationComponent,
+    ModalComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,7 @@ import { NavigationComponent } from './_core/components/navigation/navigation/na
     TabsModule.forRoot(),
     BrowserAnimationsModule,
     TypeaheadModule.forRoot(),
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
   ],
   providers: [
     {

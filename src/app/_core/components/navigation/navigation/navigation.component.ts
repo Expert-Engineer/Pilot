@@ -15,4 +15,7 @@ export class NavigationComponent {
   toggle() {
     this.isExpanded = !this.isExpanded;
   }
+  popup(){
+    
+  }
 }
